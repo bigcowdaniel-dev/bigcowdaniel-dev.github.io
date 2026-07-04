@@ -78,6 +78,10 @@
   ul.list .thesis{font-size:15px;line-height:1.5;color:var(--muted);margin-top:5px;max-width:60ch}
   ul.list .meta{font-family:"IBM Plex Mono",monospace;font-size:11.5px;
     letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+  .writing-list li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 18px;align-items:baseline}
+  .writing-list .t{grid-column:1;font-size:16.5px;line-height:1.35}
+  .writing-list .meta{grid-column:2;grid-row:1;margin-top:0;text-align:right;white-space:nowrap}
+  .writing-list .thesis{grid-column:1 / -1;margin-top:0;max-width:none;font-size:14px;line-height:1.42}
   .accomplishments li{padding:11px 0}
   .accomplishments .t{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:baseline}
   .accomp-stamp{display:inline-flex;align-items:center;min-width:62px;
@@ -110,6 +114,8 @@
 
   @media (max-width:480px){
     .wrap{padding:48px 22px 72px}
+    .writing-list li{grid-template-columns:1fr;gap:3px}
+    .writing-list .meta{grid-column:1;grid-row:auto;text-align:left}
     .accomplishments .t{grid-template-columns:1fr;gap:4px}
     .accomp-stamp{min-width:0}
   }
@@ -220,25 +226,25 @@
   </div>
 
   <p class="sheet-label">Writing</p>
-  <ul class="list">
+  <ul class="list writing-list">
     <li>
       <div class="t"><a href="articles/green-hydrogen-data-centre-opportunity.html">The Hidden Opportunity for Green Hydrogen in Data Centers</a></div>
-      <div class="thesis">The data center you build for 2027 and the one you build for 2035 are not the same problem.</div>
+      <div class="thesis">Why green hydrogen matters for multi-day firming at future data center sites.</div>
       <div class="meta">Jun 24 &middot; <a href="https://x.com/danielandclaw/status/2069852914399527021">on X</a></div>
     </li>
     <li>
       <div class="t"><a href="articles/canada-must-own-ai-infrastructure-layer.html">Canada Must Own Its AI Infrastructure Layer</a></div>
-      <div class="thesis">Canada doesn't need to win the frontier-model race, but it needs enough domestically owned compute and operating control to keep its institutions running when a foreign government redraws access rules.</div>
+      <div class="thesis">Why domestic compute control matters even if Canada does not win frontier models.</div>
       <div class="meta">Jun 2026 · <a href="https://x.com/danielandclaw/status/2066176847025512728">on X</a></div>
     </li>
     <li>
       <div class="t"><a href="articles/soil-is-not-sovereignty.html">Soil Is Not Sovereignty</a></div>
-      <div class="thesis">Sovereignty in AI infrastructure is a question of control, not geography — a Canadian-sited data centre can still be foreign-run, so Canada should deliberately own the layers that decide who's served and where the value settles.</div>
+      <div class="thesis">Why AI infrastructure sovereignty is about control, not geography.</div>
       <div class="meta">Jun 2026 · <a href="https://x.com/danielandclaw/status/2061856514516582709">on X</a></div>
     </li>
     <li>
       <div class="t"><a href="articles/neocloud-moment-not-moat.html">The Neocloud Was a Moment, Not a Moat</a></div>
-      <div class="thesis">Neoclouds thrived on a temporary 2023 financing gap, not a durable advantage; as that gap closes the pure GPU-rental middleman can't keep the rent, which migrates to whoever owns the demand, the silicon, and the power.</div>
+      <div class="thesis">Why GPU-rental middlemen lose leverage as supply, silicon, and power normalize.</div>
       <div class="meta">May 2026 · <a href="https://x.com/danielandclaw/status/2060735963815411717">on X</a></div>
     </li>
   </ul>
