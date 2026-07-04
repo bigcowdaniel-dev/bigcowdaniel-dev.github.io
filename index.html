@@ -21,7 +21,7 @@
 <style>
   :root{
     --bg:#f7f6f3;--ink:#16181c;--muted:#5d6068;--rule:#dcdad4;
-    --accent:#0a5a55;--max:880px;--measure:620px;
+    --accent:#0a5a55;--max:1040px;--measure:760px;
   }
   *{box-sizing:border-box}
   html{-webkit-text-size-adjust:100%}
@@ -64,12 +64,12 @@
     letter-spacing:.04em;color:var(--muted);margin:0 0 34px}
 
   .bio p{margin:0 0 18px;color:#2a2d33}
-  .bio{margin-bottom:52px;max-width:var(--measure)}
+  .bio{margin-bottom:60px;max-width:var(--measure)}
 
   .sheet-label{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;
     letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
     margin:0 0 4px;padding-bottom:10px;border-bottom:1px solid var(--ink)}
-  ul.list{list-style:none;margin:0 0 52px;padding:0}
+  ul.list{list-style:none;margin:0 0 60px;padding:0}
   ul.list li{padding:16px 0;border-bottom:1px solid var(--rule)}
   ul.list .t{font-size:17px;line-height:1.45;font-weight:500}
   ul.list .thesis{font-size:15px;line-height:1.5;color:var(--muted);margin-top:5px;max-width:60ch}
@@ -92,6 +92,14 @@
     .accomplishments{column-count:2;column-gap:44px}
     .accomplishments li{break-inside:avoid}
     ul.list .thesis{max-width:var(--measure)}
+  }
+  @media (min-width:760px){
+    .wrap{display:grid;grid-template-columns:minmax(0,var(--measure)) 128px;column-gap:56px;align-items:start}
+    .wrap>*{grid-column:1}
+    .social{grid-column:1 / -1}
+    .head{display:contents}
+    .head-text{grid-column:1;margin-bottom:34px}
+    .avatar{grid-column:2;grid-row:8;justify-self:end;width:112px;height:112px;margin-top:2px}
   }
 
   footer{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:var(--muted);
@@ -242,8 +250,8 @@
     </li>
   </ul>
 
-  <p class="sheet-label">Accomplishments</p>
-  <div class="filters" aria-label="Filter accomplishments">
+  <p class="sheet-label">Selected Work</p>
+  <div class="filters" aria-label="Filter selected work">
     <button type="button" class="filter active" data-filter="all" aria-pressed="true">All</button>
     <button type="button" class="filter" data-filter="capital" aria-pressed="false">Capital markets</button>
     <button type="button" class="filter" data-filter="crisis" aria-pressed="false">Crisis management</button>
