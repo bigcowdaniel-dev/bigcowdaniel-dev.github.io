@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hydrogen&#39;s data-centre opportunity starts at multi-day clean reserve, where batteries become too large for the uptime problem and gas brings the emissions problem back inside the fence.">
+<title>Green Hydrogen&#39;s Data Centre Opportunity Starts Where Batteries Stop — Daniel Lee</title>
+<style>
+  :root{--bg:#f7f6f3;--ink:#16181c;--muted:#5d6068;--rule:#dcdad4;--accent:#0a5a55;--measure:720px}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:18px;line-height:1.72;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+  a:hover{border-bottom-color:var(--accent)}
+  .wrap{max-width:var(--measure);margin:0 auto;padding:56px 24px 88px}
+  .top{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:42px}
+  .top a{color:var(--muted)}
+  h1{font-family:"Newsreader","Iowan Old Style",Georgia,serif;font-weight:500;font-size:clamp(34px,7vw,56px);line-height:1.04;letter-spacing:-.015em;margin:0 0 16px}
+  .dek{font-size:18px;line-height:1.55;color:#2a2d33;margin:0 0 14px}
+  .meta{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 42px;padding-bottom:18px;border-bottom:1px solid var(--rule)}
+  article h2,article h3,article h4{font-size:20px;line-height:1.35;margin:34px 0 10px}
+  article p{margin:0 0 20px}
+  blockquote{border-left:2px solid var(--accent);margin:26px 0;padding:2px 0 2px 18px;color:#2a2d33}
+  blockquote p{margin:0}
+  footer{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12px;color:var(--muted);margin-top:52px;padding-top:18px;border-top:1px solid var(--rule)}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="../index.html">Daniel Lee</a> / Writing</div>
+  <h1>Green Hydrogen&#39;s Data Centre Opportunity Starts Where Batteries Stop</h1>
+  <p class="dek">Hydrogen&#39;s data-centre opportunity starts at multi-day clean reserve, where batteries become too large for the uptime problem and gas brings the emissions problem back inside the fence.</p>
+  <p class="meta">Jun 2026 &middot; <a href="https://x.com/danielandclaw/status/2069852914399527021">on X</a></p>
+  <article>
+<h3>A 100 MW data-centre campus that wants 72 hours of clean reserve needs 7.2 GWh of delivered electricity. That number is the whole problem. Batteries can cover the handoff and the first hours. Gas can cover the duration but brings the emissions problem back inside the fence. Green hydrogen is the clean firming option that starts to make sense when the site has cheap renewable energy to overbuild and a load valuable enough to pay for multi-day uptime.</h3>
+<p>The mistake in most hydrogen-for-data-centres arguments is starting with the fuel.</p>
+<p>Start with the reserve.</p>
+<p>AI data centres are turning power into the gating constraint. The International Energy Agency projects data-centre electricity demand rising from about 415 TWh in 2024 to roughly 945 TWh by 2030. In the United States, data centres account for nearly half of electricity-demand growth to 2030. The demand is concentrated industrial load with tenants, delivery dates, fiber requirements, cooling systems, procurement teams, and expensive assets waiting on power.</p>
+<p>The first siting screen is deliverability. Can the site get power now? Does the transmission exist? Is the fiber there? Can land be assembled? Can the local politics absorb the fight? Northern Virginia and Ashburn matter because they answer those questions better than most places. They have the installed base: network density, operators, contractors, power history, and market muscle.</p>
+<p>Green hydrogen is not the first answer at those sites. If a campus is being selected because it can energize now, the power stack will use what can be built on the tenant schedule: grid service, gas, batteries, diesel backup, and whatever contracts make the capacity real.</p>
+<p>The green hydrogen case begins at the other kind of site: the energy-fundamentals site. Cheap renewable energy. Good cooling. Constructable land. A power system designed around the campus instead of bolted on after site control. Fiber can be built. Renewable overbuild can be planned. Storage can be sized from the start. The data centre becomes the anchor load for an energy system.</p>
+<p>Green hydrogen has a job only in that architecture.</p>
+<p>It is not magic. It is inefficient. It is physical infrastructure. It needs tanks, electrolyzers, water treatment, compression, safety systems, fuel cells or turbines, controls, contracts, and a site that can actually hold the equipment. But it has one property batteries do not have at multi-day duration: the power block and the energy block can be scaled separately.</p>
+<p>That matters more than the hydrogen debate usually admits.</p>
+<h3>I. The battery number changes the argument</h3>
+<p>Take the 100 MW campus.</p>
+<p>The reserve math is simple:</p>
+<p>1. 24 hours = 2,400 MWh.</p>
+<p>2. 48 hours = 4,800 MWh.</p>
+<p>3. 72 hours = 7,200 MWh.</p>
+<p>A 72-hour clean reserve is 7.2 GWh.</p>
+<p>For lithium-ion batteries, that means buying an enormous amount of electrochemical storage to sit mostly full because the SLA depends on it. Batteries are essential for the data-centre stack. They handle UPS bridging, fast response, short-duration shifting, power quality, and the handoff between grid loss and backup generation. They are the wrong tool for days of reserve.</p>
+<p>NREL&#39;s 2023 utility-scale battery cost projection puts 2030 lithium-ion storage costs at roughly $255/kWh to $403/kWh for a four-hour system, in 2022 dollars. Apply that range to 7.2 GWh and the storage block alone is roughly $1.8 billion to $2.9 billion before the critical-power wrapper: redundancy, augmentation, land, HVAC, fire systems, interconnection, controls, EPC, contingency, financing, and the fact that a data-centre reserve is not an ordinary merchant battery.</p>
+<p>Use more aggressive cell-only assumptions and the number can move closer to $1.5 billion to $2.0 billion. It is still a giant battery plant attached to one campus.</p>
+<p>Hydrogen stops looking large by default once the comparison is framed correctly. The choice is not a fuel cell against a containerized battery. It is a multi-day hydrogen reserve against 7.2 GWh of batteries held for a rare but unacceptable outage.</p>
+<p>At multi-day duration, power and energy need to separate.</p>
+<p>With batteries, duration means more cells. Cost scales with stored energy. The asset degrades on the calendar whether it cycles or not.</p>
+<p>With green hydrogen, the fuel cell or turbine sets the MW. The tanks set the duration. Add reserve by adding stored fuel and storage infrastructure. The system is still large, but it is large in the way a fuel system is large, not in the way a 7.2 GWh battery is large.</p>
+<p>The clean argument for hydrogen starts there.</p>
+<h3>II. The gas problem is physical, not reputational</h3>
+<p>Diesel is the visible incumbent because every data centre has a backup story. It is not the main emissions target. Diesel backup runs too little to explain the strategic problem by itself.</p>
+<p>The real displacement target is gas firming.</p>
+<p>Gas is the obvious answer to a fast-growing power load. It is dispatchable. Operators understand it. Lenders understand it. It can serve the campus when wind is low, solar is gone, batteries are empty, and the grid is constrained. If the only question is uptime on a schedule, gas has a very strong case.</p>
+<p>The problem is what happens when gas becomes the primary behind-the-meter growth model for AI campuses.</p>
+<p>Then the issue moves from corporate accounting to physical emissions. Local air permits. NOx. Community opposition. Fuel logistics. Hyperscaler carbon commitments. A campus can buy renewable energy certificates and still have a fossil plant running behind the fence. A 24/7 match can tighten the accounting, but it does not change what is physically generating during the constrained hour.</p>
+<p>Green hydrogen belongs in the conversation because it serves the same firming job without bringing the same emissions problem onto the site. Gas is simpler. Green hydrogen has to be cleaner and firm enough to matter.</p>
+<p>The buyer pressure is real. Microsoft targets 100% of electricity consumption, 100% of the time, matched by zero-carbon energy purchases by 2030. Google, Amazon, and Meta all publish large clean-energy, renewable-matching, or net-zero commitments. Those commitments are not the same as physical zero-carbon power. They still shape which power architectures are credible for the largest buyers.</p>
+<p>The campus that can say &quot;we matched our energy&quot; has an accounting story. The campus that can say &quot;our multi-day reserve is made from our own renewable overbuild&quot; has an infrastructure story.</p>
+<p>The second claim is harder and worth more.</p>
+<h3>III. Green hydrogen only works at the right site</h3>
+<p>The honest objection to green hydrogen is efficiency.</p>
+<p>A simplified chain:</p>
+<p>1. Electrolysis consumes about 52 kWh per kilogram of hydrogen.</p>
+<p>2. Hydrogen contains about 33.3 kWh/kg on a lower-heating-value basis.</p>
+<p>3. Convert it back to electricity at roughly 50% delivered efficiency.</p>
+<p>4. Delivered power is about 16.7 kWh per kilogram.</p>
+<p>In round numbers, the system uses about 3.1 kWh of input electricity for 1 kWh delivered back to the data centre.</p>
+<p>That penalty is brutal if the electricity is expensive. It is manageable only where the site has structurally cheap renewable energy, surplus generation, curtailment, or a power plan already built around overcapacity.</p>
+<p>The siting frame matters because green hydrogen is not a generic data-centre accessory. It is a site-selection strategy.</p>
+<p>Deliverability sites use the power system that exists. Energy-fundamentals sites build a power system around the load. Green hydrogen belongs in the second category because the inefficiency only pencils when input electrons are cheap enough and the firm output is valuable enough.</p>
+<p>For the 100 MW, 72-hour reserve:</p>
+<p>1. Delivered electricity required: 7.2 GWh.</p>
+<p>2. Hydrogen required at 50% conversion: about 432 tonnes.</p>
+<p>3. Electrolyzer input at 52 kWh/kg: about 22.5 GWh.</p>
+<p>4. Refill over 7 days: about 134 MW average electrolyzer input.</p>
+<p>5. Refill over 14 days: about 67 MW average electrolyzer input.</p>
+<p>6. Refill over 30 days: about 31 MW average electrolyzer input.</p>
+<p>The 22.5 GWh number sounds bad until the alternative is stated clearly. A battery requires 7.2 GWh of high-value electrochemical storage sitting on the site. Green hydrogen requires generation overbuild, electrolysis, and fuel storage that can be filled when renewable output is abundant and power is cheap.</p>
+<p>The site takes more generation and a more complex fuel system in exchange for multi-day duration that does not require buying a multi-billion-dollar battery reserve.</p>
+<h3>IV. Backup is the wrong business model</h3>
+<p>Hydrogen as a diesel-generator replacement is too narrow.</p>
+<p>A backup-only hydrogen system sits idle most of the year. That can still be valuable if the tenant pays for reserve availability, but it leaves expensive equipment waiting for rare events. It also makes the economics look worse than they need to be.</p>
+<p>The stronger model is firming.</p>
+<p>A behind-the-meter green hydrogen system can do several jobs if the operating doctrine is designed correctly:</p>
+<p>1. Preserve a protected reserve for SLA events.</p>
+<p>2. Convert surplus renewable generation into stored fuel.</p>
+<p>3. Reduce reliance on unabated gas during constrained or low-renewable periods.</p>
+<p>4. Rebuild reserve after an event on a defined schedule.</p>
+<p>5. Provide grid services only above the protected reserve floor.</p>
+<p>The reserve floor is the hard rule. A data-centre tenant will not accept a system that was profitable yesterday and empty today. Revenue stacking can help the economics only after the SLA is protected.</p>
+<p>Hydrogen becomes infrastructure when the valuable asset is no longer the electrolyzer or the fuel cell by itself. The valuable asset is the operating system: renewable overbuild, electrolyzer dispatch, protected storage, conversion capacity, control logic, reserve doctrine, and a contract that pays for firm clean power.</p>
+<h3>V. Green hydrogen, not generic hydrogen</h3>
+<p>The data-centre argument is green hydrogen.</p>
+<p>Blue hydrogen is a different industrial pathway: natural gas feedstock, carbon capture, CO2 handling, different permits, different infrastructure, different emissions claims. It may matter elsewhere. It does not support the onsite renewable-electrolysis case.</p>
+<p>The relevant campus model is direct:</p>
+<p>1. Build or contract cheap renewable generation around the load.</p>
+<p>2. Use electrolysis to absorb surplus output.</p>
+<p>3. Store hydrogen behind the meter or tightly colocated with the campus.</p>
+<p>4. Convert it back to electricity through fuel cells or turbines when the site needs firm power.</p>
+<p>5. Keep batteries for fast response and short duration.</p>
+<p>The same frame clarifies the LDES question. Long-duration energy storage is a category, not an answer. Pumped hydro needs geography. Compressed air needs geology. Flow batteries need large electrolyte systems and bankable deployment history. Thermal storage can help with heat or cooling but does not automatically give critical electrical power. Emerging long-duration batteries may matter, but five-nines infrastructure will care about track record.</p>
+<p>Green hydrogen is not the only LDES path. It is the LDES path that best matches the energy-fundamentals data-centre site: renewable overbuild, behind-the-meter production, multi-day molecule storage, and dispatchable conversion back to electricity.</p>
+<h3>VI. The Envision lesson</h3>
+<p>Envision is useful only as an integration reference.</p>
+<p>Ordos and Chifeng are not data-centre proof points. They are not Western project-finance comps. They are reported Chinese green-molecule and industrial-park examples with state-adjacent context.</p>
+<p>The lesson worth keeping is the system shape: generation, molecules, storage, industrial load, and offtake designed together.</p>
+<p>A serious green hydrogen data-centre campus has the same structure. The compute load is the industrial anchor. Renewable generation is the energy base. Electrolysis converts surplus into stored fuel. Hydrogen storage creates duration. Fuel cells or turbines create firm power. The contract stack decides who pays for energy, reserve availability, incentives, and optional grid services.</p>
+<p>That integration model is the bull case. Not hydrogen as a gadget. Hydrogen as the storage and firming layer inside a purpose-built energy campus.</p>
+<h3>Conclusion</h3>
+<p>Green hydrogen does not win by being easy. Gas is easier. Batteries are easier for short duration. Grid power is easier when it exists.</p>
+<p>Green hydrogen wins only where the harder thing is the valuable thing: turning cheap renewable overbuild into multi-day dispatchable uptime.</p>
+<p>For a 100 MW campus, 72 hours means 7.2 GWh. A battery answer starts to look like a multi-billion-dollar battery plant attached to one load. A gas answer solves dispatch and reopens the emissions, air-permit, and credibility problem. Green hydrogen is inefficient, but it converts the right site attribute, cheap surplus renewable energy, into the right data-centre product: firm clean power when the campus actually needs it.</p>
+<p>The architecture worth underwriting is specific: energy-fundamentals sites, overbuilt renewables, protected hydrogen reserve, batteries for fast response, and contracts that pay for clean uptime rather than paper matching.</p>
+  </article>
+  <footer><a href="../index.html">Back to Daniel Lee</a></footer>
+</div>
+</body>
+</html>
