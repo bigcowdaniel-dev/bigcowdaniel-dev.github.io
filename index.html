@@ -31,7 +31,9 @@
   a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
   a:hover{border-bottom-color:var(--accent)}
   a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
-  .wrap{max-width:var(--max);margin:0 auto;padding:72px 28px 96px}
+  .wrap{max-width:var(--max);margin:0 auto;padding:72px 28px 96px;
+    display:grid;grid-template-columns:minmax(0,1fr) 64px;column-gap:18px;align-items:start}
+  .wrap>*{grid-column:1 / -1}
 
   .social{display:flex;gap:18px;margin-bottom:44px}
   .social a{position:relative;display:inline-flex;color:var(--muted);border:0}
@@ -47,10 +49,11 @@
   @media (hover:none){.social a[data-tip]::after{display:none}}
 
   .avatar{width:104px;height:104px;border-radius:50%;object-fit:cover;
-    display:block;border:1px solid var(--bg);flex:0 0 auto;
+    display:block;border:1px solid var(--bg);flex:0 0 auto;grid-column:2;grid-row:8;
+    justify-self:end;width:64px;height:64px;margin-top:2px;
     box-shadow:0 0 0 1px var(--bg),0 0 0 3px #0a5a5559}
-  .head{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;margin-bottom:34px}
-  .head-text{min-width:0}
+  .head{display:contents}
+  .head-text{min-width:0;margin-bottom:34px}
   .contact-top{font-size:15px;color:var(--muted);margin:10px 0 0}
   .contact-top a{color:var(--ink)}
   .contact-top a:hover{color:var(--accent)}
@@ -87,6 +90,9 @@
     font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:7px 10px;line-height:1}
   .filter:hover,.filter.active{border-color:var(--accent);color:var(--accent);background:#0a5a5508}
   .filter:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .work-label{grid-column:1;grid-row:8;align-self:start;margin-bottom:0}
+  .work-filters{grid-column:1 / -1;grid-row:9}
+  .accomplishments{grid-column:1 / -1;grid-row:10}
   .accomplishments li[hidden]{display:none}
   @media (min-width:680px){
     .accomplishments{column-count:2;column-gap:44px}
@@ -94,12 +100,9 @@
     ul.list .thesis{max-width:var(--measure)}
   }
   @media (min-width:760px){
-    .wrap{display:grid;grid-template-columns:minmax(0,var(--measure)) 128px;column-gap:56px;align-items:start}
-    .wrap>*{grid-column:1}
+    .wrap{grid-template-columns:minmax(0,var(--measure)) 128px;column-gap:56px}
     .social{grid-column:1 / -1}
-    .head{display:contents}
-    .head-text{grid-column:1;margin-bottom:34px}
-    .avatar{grid-column:2;grid-row:8;justify-self:end;width:112px;height:112px;margin-top:2px}
+    .avatar{width:112px;height:112px}
   }
 
   footer{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:var(--muted);
@@ -107,7 +110,6 @@
 
   @media (max-width:480px){
     .wrap{padding:48px 22px 72px}
-    .head{flex-direction:column-reverse;align-items:flex-start;gap:18px}
     .accomplishments .t{grid-template-columns:1fr;gap:4px}
     .accomp-stamp{min-width:0}
   }
@@ -250,8 +252,8 @@
     </li>
   </ul>
 
-  <p class="sheet-label">Selected Work</p>
-  <div class="filters" aria-label="Filter selected work">
+  <p class="sheet-label work-label">Selected Work</p>
+  <div class="filters work-filters" aria-label="Filter selected work">
     <button type="button" class="filter active" data-filter="all" aria-pressed="true">All</button>
     <button type="button" class="filter" data-filter="capital" aria-pressed="false">Capital markets</button>
     <button type="button" class="filter" data-filter="crisis" aria-pressed="false">Crisis management</button>
