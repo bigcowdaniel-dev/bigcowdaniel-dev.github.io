@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Why standardized AI infrastructure, remote Canadian sites, and financing constraints make modular data center construction inevitable.">
+<link rel="canonical" href="https://daniel-lee.ca/articles/stick-built-data-centers-are-dead.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Stick-Built Data Centers Are Dead. Long Live Modular Data Centers.">
+<meta property="og:description" content="Why standardized AI infrastructure, remote Canadian sites, and financing constraints make modular data center construction inevitable.">
+<meta property="og:url" content="https://daniel-lee.ca/articles/stick-built-data-centers-are-dead.html">
+<meta property="og:image" content="https://daniel-lee.ca/headshot.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Stick-Built Data Centers Are Dead. Long Live Modular Data Centers.">
+<meta name="twitter:description" content="Why standardized AI infrastructure, remote Canadian sites, and financing constraints make modular data center construction inevitable.">
+<meta name="twitter:image" content="https://daniel-lee.ca/headshot.jpg">
+<title>Stick-Built Data Centers Are Dead. Long Live Modular Data Centers. — Daniel Lee</title>
+<style>
+  :root{--bg:#f7f6f3;--ink:#16181c;--muted:#5d6068;--rule:#dcdad4;--accent:#0a5a55;--measure:720px}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:18px;line-height:1.72;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+  a:hover{border-bottom-color:var(--accent)}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  .wrap{max-width:var(--measure);margin:0 auto;padding:56px 24px 88px}
+  .top{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:42px}
+  .top a{color:var(--muted)}
+  h1{font-family:"Newsreader","Iowan Old Style",Georgia,serif;font-weight:500;font-size:clamp(34px,7vw,56px);line-height:1.04;letter-spacing:-.015em;margin:0 0 16px}
+  .dek{font-size:18px;line-height:1.55;color:#2a2d33;margin:0 0 14px}
+  .meta{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 42px;padding-bottom:18px;border-bottom:1px solid var(--rule)}
+  article h2{font-size:20px;line-height:1.35;margin:34px 0 10px}
+  article p{margin:0 0 20px}
+  footer{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12px;color:var(--muted);margin-top:52px;padding-top:18px;border-top:1px solid var(--rule)}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="../index.html">Daniel Lee</a> / Writing</div>
+  <h1>Stick-Built Data Centers Are Dead. Long Live Modular Data Centers.</h1>
+  <p class="dek">Why standardized AI infrastructure, remote Canadian sites, and financing constraints make modular construction inevitable.</p>
+  <p class="meta">Jul 6, 2026 &middot; <a href="https://x.com/danielandclaw/status/2074133439591444863">on X</a></p>
+  <article>
+    <p>There is a kind of infrastructure project that begins as construction and becomes manufacturing once unit counts get high enough, interfaces stable enough, and site labour expensive enough. Offshore platforms went this way. LNG plants went this way: topsides, pipe racks, e-houses, and compressor skids built in yards because the alternative was too much field work in the wrong place. Data centers are next.</p>
+    <p>The four largest American cloud companies are planning to spend roughly $700 billion on capital projects in 2026, most of it AI data centers. No industry has ever tried to build this much of one asset class this fast, and the construction model is changing under the load.</p>
+    <p>The argument is both a demonstration of industry maturation, and a story of necessity. AI data centers are converging on standardized designs written around chip platforms. A design that gets built many times stops being a construction project and becomes a manufactured product. And in a high-labour market like Canada, where the power often sits nowhere near the trades, the manufactured version, which looks like modular data centers, is the path forward.</p>
+
+    <h2>I. The Chips that Write the Design</h2>
+    <p>For two years, hyperscalers and AI labs scrambled: energizing GPUs anywhere power existed, converting crypto mines, retrofitting warehouses, leasing anything with a substation. That phase is ending. Capital programs are now planned years ahead, buyers are engineering around the next chip generation before the current one ships, and the customer base has widened past the big four clouds to AI labs, neoclouds, and sovereign programs, each placing gigawatt-scale orders.</p>
+    <p>The document at the center of that planning is the BOD: the engineering specification a tenant hands a developer before anyone pours concrete. A conventional data center could treat the server hall as neutral white space: the landlord supplied power, cooling, and security, and the tenant rolled in racks. AI ends that. The chip platform dictates the physical plant: kilowatts per rack, coolant supply temperature, how liquid reaches the silicon, how the power train is arranged, what happens when something fails. A Blackwell hall, a TPU hall, and a Trainium hall are three different industrial facilities.</p>
+    <p>In the age of CFO-driven capital programs, with multi-year spending commitments communicated to investors and billion-dollar buildings behind each one, the BOD becomes a replicable document: buyers standardize it and issue it to developers. Buyers of compute standardize the envelope: the power-density band, coolant temperature, and rack interfaces around the chip family, so the next chip drops in without redesigning the plant. The chip writes the BOD; the envelope outlives the chip. We are just now seeing this become the standard.</p>
+    <p>A standardized BOD changes what building means. Under stick-build, every site re-engineers the same requirements: local consultants, local drawings, local trades solving solved problems again. Under a standardized BOD, the design is solved once and the job becomes replication.</p>
+    <p>Design one, build many: that is the condition modular construction has always needed and rarely had.</p>
+
+    <h2>II. Modular Goes Beyond Containers</h2>
+    <p>Strip out the servers and a data center is really just an industrial mechanical and electrical plant. Medium-voltage switchgear and transformers step grid power down. UPS systems and batteries ride through interruptions. Busway carries power to the racks. Coolant distribution units pump liquid to the chips, and dry coolers reject the heat outside. Layered over it all, the usual: fire suppression, leak detection, and the controls. Historically, every piece was field-built, meaning thousands of hours of pipefitting, cable pulls, terminations, and testing at each site, performed by whatever trades the local market could supply.</p>
+    <p>Modular moves that work into a factory. Power rooms arrive as finished "e-houses". Cooling arrives as tested skids. Rack pods arrive matched to the tenant's reference design. Each block is factory acceptance tested before it ships, then set on foundations and connected. The weak version of modular is a data center in a shipping container. The strong version is factory-integrated MEP, the mechanical and electrical guts, with proven interfaces. And it now has catalog SKUs.</p>
+    <p>Vertiv is an example of the market's verdict on this: a 2016 carve-out of Emerson's network power business, its 2023 share price gain beat every company in the S&amp;P 500, and as a result of its meteoric rise it now sits in the S&amp;P 500 index and on the Fortune 500 list. This is all despite modular being the alternative, not the default, for the vast majority of data center builds today.</p>
+
+    <h2>III. Data Center Locations of the Future</h2>
+    <p>Two forces push infrastructure into factories: sites that are hard to build on, and designs that repeat. Canada's AI map has both.</p>
+    <p>The first is site access. Wonder Valley, pitched as the world's largest AI data center park, sits in the Greenview Industrial Gateway near Grande Prairie, northern Alberta gas country. Bell is building six AI data centers in British Columbia, including Kamloops and Merritt, plus what it describes as Canada's largest AI facility near Regina. TELUS sold out its first AI factory in Rimouski, Quebec, and is expanding into a Kamloops and Vancouver cluster under the federal sovereign compute program. Add Atlantic Canada's deepwater industrial sites and the pattern is unmistakable: power picks the site, and power does not live where the trades do. The deep construction labour pools are in Toronto, Montreal, Vancouver, and Edmonton. The data center power is in northern gas fields, interior valleys, and coastal industrial land. Grande Prairie is a city of about sixty-five thousand people, a half-day's drive from Edmonton. Every worker beyond the local base means camps, flights, and living-out allowances, in competition with LNG, mining, and pipeline projects for the same certified trades, while winter compresses the outdoor season to half the year. LNG Canada settled this question a decade ago: at remote Canadian sites, modules are the price of feasibility, cheap or otherwise.</p>
+    <p>The second is productization: a tenant deploying the same capacity block across many sites has a product requirement, and AI finally created the volume to justify it. Neoclouds and hyperscalers now hold multi-gigawatt fleets of identical chips to deploy across dozens of sites worldwide, and that uniformity is new. The early neocloud era, a grab-bag of GPU generations that needed a bespoke building each time, is over: multi-year capex cycles and disciplined capital planning mean buyers order the same block, again and again, and expect it delivered the same way.</p>
+    <p>Canada sits at the intersection. Labour is expensive, the weather compresses the season, skilled trades are regionally thin, and the best power sites sit far from the deepest labour pools. Canada proves the need. AI scale proves the repeatability.</p>
+    <p>And so, the modular case for Canada writes itself. Local: civil works, foundations, substations, interconnection, final assembly, commissioning, operations, community and Indigenous partnership, and ownership of the long-duration asset. Manufactured: the repeatable MEP stack. Own the site, the power, and the operations; buy the repetitive complexity from wherever the trusted supply chain builds it best.</p>
+
+    <h2>IV. Trusted Manufacturing as a Real Constraint</h2>
+    <p>China dominates the manufacturing base for much of what fills these modules: transformers, switchgear, busway, batteries, pumps, heat exchangers, fabricated enclosures, integrated skids. That is the industrial map, and pretending otherwise wastes everyone's time.</p>
+    <p>It is also why allied modular manufacturing capacity has become the binding constraint on sovereign AI infrastructure. Canada, the U.S., and Europe want trusted compute, and trusted compute requires a boring industrial layer of certified power rooms, cooling skids, and factory-tested MEP built in trusted jurisdictions or under trusted procurement rules. That layer barely exists at the scale now being ordered.</p>
+    <p>The workable line runs through the control plane. Steel, copper, and enclosures can come from global supply chains. Controls, firmware, protection settings, and remote access are the security surface, and hyperscaler procurement rules already police them. A practical sovereign standard for Canada: hardware fabricated wherever the supply chain fabricates it, with firmware loading, control configuration, and protection-settings commissioning performed in Canada by vetted personnel against verified builds. That rule is certifiable and enforceable, and it seeds a domestic final-integration industry, which is worth more than pretending the transformers will ever be Canadian.</p>
+
+    <h2>V. The Economics are Schedule First</h2>
+    <p>Data center developers: do not choose modular because a unit-cost spreadsheet says every module is cheaper. Sometimes it is. Sometimes logistics and vendor margin eat the saving.</p>
+    <p>Choose it for the critical path. Civil works and the substation advance while power and cooling blocks are fabricated elsewhere. Factory acceptance testing happens before anything ships. Commissioning starts from a known interface instead of a field-built puzzle. Modular converts construction risk, the kind lenders and tenants hate most, into manufacturing and logistics risk, which factories are built to manage.</p>
+    <p>At AI lease economics, delay is the expensive line item. A one-month slip on a 100 MW block of IT load means eight figures of foregone rent, plus construction carry, tenant friction, and GPUs aging in a warehouse. Canada sharpens the point: miss the summer construction window and the slip is measured in seasons.</p>
+
+    <h2>VI. The Financing Case</h2>
+    <p>For equity: underwriting returns for a modular data center is all about managing delay risk while lowering the financing cost, for a capex-intensive build where unlevered returns are priced on a yield-to-cost basis.</p>
+    <p>The AI buildout has produced some of the strongest revenue instruments in real assets: fifteen-to-twenty-year triple-net leases with investment-grade tenants or credit-backstopped labs. A lender can lend against that lease for the full term. Construction and SLA risk are where lenders concentrate the pricing.</p>
+    <p>Modular strips out the risks bespoke field-built MEP carries most: labour productivity, weather, change orders, commissioning surprises.</p>
+    <p>A factory product with a serial number, FAT records, fixed catalog pricing, and a Fortune 500 OEM behind it is a diligence package an independent engineer can underwrite once and apply across an entire program.</p>
+    <p>The reference design gives the lender a repeatable technical basis; the twenty-year lease gives them a repeatable revenue basis. Twenty-year money against a twenty-year lease and a documented product line is bond-market financeable, and that is how this sector graduates from private credit to term debt.</p>
+
+    <h2>VII. What the Future Looks Like</h2>
+    <p>In Canada, we're taught to skate to where the puck is going.</p>
+    <p>Most AI capacity delivered to date is stick-built or hybrid, and the biggest campuses in Northern Virginia, Dallas, and Columbus will keep being field-built, because those markets hold the deepest data-center trades pools on earth and enough scale to amortize bespoke engineering. Stick-build also survives in retrofits, in one-off flagship campuses, and in the site layer everywhere: earthworks, a substation, or a shell.</p>
+    <p>Stick-build dies where the puck is going: remote and high-labour-cost sites, cold climates with short seasons, and any program deploying the same capacity block more than a handful of times. Which is to say, it dies in most of Canada, and in most of the AI buildout's growth geography.</p>
+    <p>Modular's limits deserve the last word of caution. It does not create power. It does not solve interconnection, transmission, permitting, water, fiber, tenant credit, or community acceptance, and those, far more than anything in a factory, still decide whether a project is real. Modular changes one thing: how much complexity has to be invented in a field, in winter, four hours from the nearest trades hall.</p>
+    <p>Concrete, steel, substations, and field crews are going nowhere; the site layer of this industry will employ trades for decades. What is ending is the practice of rebuilding the repeatable parts of AI infrastructure from scratch at every site, in the most expensive place to do the work.</p>
+    <p>The chip writes the BOD. The BOD defines the envelope. The envelope becomes the module. The module becomes the data center.</p>
+    <p>Long live modular data centers.</p>
+  </article>
+  <footer>Daniel Lee &middot; Halifax, Nova Scotia</footer>
+</div>
+</body>
+</html>
